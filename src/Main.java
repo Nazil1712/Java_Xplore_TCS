@@ -2,6 +2,7 @@ import java.awt.*;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -165,9 +166,45 @@ public class Main {
 
         // 10) For Loop
 
-        for(int i=0; i<5; i++) {
+        /*for(int i=0; i<5; i++) {
             System.out.println("Current i : "+ i);
-        }
+        }*/
 
+
+        // 11) Using Library for extra functionalities
+
+        /*double power = Math.pow(2,3);
+//        System.out.println(power);
+
+        double squareRoot = Math.sqrt(16);
+//        System.out.println(squareRoot);
+
+
+        Random randomNum = new Random();
+
+        int r1 = randomNum.nextInt();
+        System.out.println(r1);
+
+        int r2 = randomNum.nextInt(10); // will give random number betn 0 & 9
+        System.out.println(r2);*/
+
+
+
+        // 12) Using Coin Class
+        /*Coin c1 = new Coin();
+
+        for(int i=0; i<10; i++) {
+            String ans = c1.getFaceUp();
+            System.out.println(ans);
+        }*/
+
+
+        // 13) Using Dice Class
+        Dice d1 = new Dice();
+
+        for (int i=0; i<10; i++) {
+            d1.flip();
+            d1.getFaceUp();
+        }
     }
 }
